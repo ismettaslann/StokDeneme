@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stokdeneme.FXMLDocumentController">
+   <children>
+      <TextField fx:id="txt_user" layoutX="107.0" layoutY="14.0" />
+      <Label layoutX="21.0" layoutY="18.0" text="Kullanıcı Adı" />
+      <Label layoutX="21.0" layoutY="52.0" text="Şifre" />
+      <PasswordField fx:id="pass" layoutX="107.0" layoutY="48.0" />
+      <Button fx:id="btn_giris" layoutX="313.0" layoutY="14.0" mnemonicParsing="false" onAction="#giris_basildi" prefHeight="25.0" prefWidth="54.0" text="Giriş" />
+      <Label layoutX="21.0" layoutY="88.0" text="IBAN" />
+      <Label layoutX="21.0" layoutY="123.0" text="Marka" />
+      <Label layoutX="21.0" layoutY="161.0" text="Model" />
+      <Label layoutX="21.0" layoutY="199.0" text="Fiyat" />
+      <TextField fx:id="txt_iban" editable="false" layoutX="107.0" layoutY="84.0" />
+      <TextField fx:id="txt_marka" editable="false" layoutX="107.0" layoutY="119.0" />
+      <TextField fx:id="txt_model" editable="false" layoutX="107.0" layoutY="157.0" />
+      <TextField fx:id="txt_fiyat" editable="false" layoutX="107.0" layoutY="195.0" />
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="283.0" prefHeight="202.0" prefWidth="671.0">
+        <columns>
+          <TableColumn fx:id="tbl_user" prefWidth="127.0" text="Kullanıcı Adı" />
+          <TableColumn fx:id="tbl_iban" prefWidth="76.0" text="IBAN" />
+            <TableColumn fx:id="tbl_marka" prefWidth="79.0" text="Marka" />
+            <TableColumn fx:id="tbl_model" prefWidth="79.0" text="Model" />
+            <TableColumn fx:id="tbl_fiyat" prefWidth="111.0" text="Fiyat" />
+            <TableColumn fx:id="tbl_miktar" prefWidth="92.0" text="Miktar" />
+        </columns>
+      </TableView>
+      <Label layoutX="21.0" layoutY="239.0" text="Miktar" />
+      <TextField fx:id="txt_miktar" editable="false" layoutX="107.0" layoutY="235.0" />
+      <Button fx:id="btn_ekle" disable="true" layoutX="313.0" layoutY="235.0" mnemonicParsing="false" onAction="#ekle_basildi" prefHeight="25.0" prefWidth="54.0" text="Ekle" />
+   </children>
+</AnchorPane>
